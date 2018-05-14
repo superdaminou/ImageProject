@@ -1,0 +1,147 @@
+
+
+var ulContextes = document.getElementById("contexteList");
+var divImages = document.getElementById("photo");
+var xmlDoc = null;
+var xmlDocVideo = null;
+
+function selectContext(e) {
+
+    if (e.target.nodeName == "LI") {
+        var divsToHide = document.getElementsByClassName("weighted");
+
+        for (var i = 0; i < divsToHide.length; i++) {
+            divsToHide[i].style.display = "none";
+        }
+
+        var cDiv = e.target.children;
+        for (var i = 0; i < cDiv.length; i++) {
+            cDiv[i].style.display = 'block';
+        }
+    }
+}
+
+
+function pageLoaded() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            xmlDocVideo = this.responseXML;
+        }
+    };
+    xhttp.open("GET", "Concepts_Videos.xml", true);
+    xhttp.send();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            displayContextes(this);
+
+        }
+    };
+    xhttp.open("GET", "Contextes_concepts.xml", true);
+    xhttp.send();
+    ulContextes.addEventListener("click", function (e) { selectContext(e) });
+}
+
+
+function compareWeightDesc(a, b) {
+    if (a.weight > b.weight)
+        return -1;
+    if (a.weight < b.weight)
+        return 1;
+    // a doit être égal à b
+    return 0;
+}
+
+function displayImages(pConceptName) {
+
+    var images = [];
+    var concepts = xmlDocVideo.childNodes[0].getElementsByTagName("concept");
+    for (var j = 0; j < concepts.length; j++) {
+        var concept = concepts[j];
+        var conceptName = concept.getAttribute('Name');
+        if (conceptName === pConceptName) {
+            var imagesNodes = concept.getElementsByTagName("video");
+            for (var i = 0; i < imagesNodes.length; i++) {
+                var image = imagesNodes[i];
+
+                var objectImage = { name: "key frames/" + image.getAttribute('Name') + "/" + image.getAttribute('shotrepres') + ".jpg", weight: image.getAttribute('Weight') };
+                images.push(objectImage);
+
+                
+            }
+        }
+    }
+
+    images = images.sort(compareWeightDesc);
+    displayImagesAndLoad(images);
+}
+
+function displayImagesAndLoad(images){
+    divImages.innerHTML = '';
+    for (var j = 0; j < images.length; j++) {
+        var figure = document.createElement("figure");
+        var img = document.createElement("img");
+        var figcaption = document.createElement("figcaption");
+        figcaption.appendChild(document.createTextNode(images[j].weight));
+        img.src = images[j].name;
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        divImages.appendChild(figure);
+    }
+}
+
+
+
+function displayContextes(xml) {
+    xmlDoc = xml.responseXML;
+    var Contextes = xmlDoc.childNodes[0].getElementsByTagName("Contexte");
+
+    for (var i = 0; i < Contextes.length; i++) {
+        var Contexte = Contextes[i].getAttribute('Name');
+        var ulSubList = document.createElement("ul");
+
+        ulSubList.id = "id" + Contexte;
+        ulSubList.className = 'weighted';
+        ulSubList.style.display = "none";
+        var concepts = Contextes[i].getElementsByTagName("concept");
+
+        for (var j = 0; j < concepts.length; j++) {
+            var ConceptWeight = concepts[j].getAttribute('Weight');
+            var conceptName = concepts[j].getAttribute('ConceptName');
+
+            var liSubList = document.createElement("li");
+            var aliSubList = document.createElement("a");
+
+            var finalWeight = ConceptWeight.replace(",", ".") * 20 + "px";
+
+            aliSubList.style.fontSize = finalWeight;
+
+            aliSubList.appendChild(document.createTextNode(conceptName));
+            aliSubList.addEventListener("click", function () { displayImages(this.innerText); });
+
+            liSubList.appendChild(aliSubList);
+            ulSubList.appendChild(liSubList);
+
+        }
+
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(Contexte));
+        li.append(ulSubList);
+
+
+
+        ulContextes.appendChild(li);
+
+       /* try {
+            TagCanvas.Start(Contexte);
+        } catch (e) {
+            console.log(e);
+        }*/
+    }
+}
+
+
+
+document.addEventListener('DOMContentLoaded', pageLoaded, false);
