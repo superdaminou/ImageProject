@@ -1,0 +1,22 @@
+.weighted {
+    margin-left: 20px;
+}
+
+a {
+    color: #4040f0;
+    text-decoration: none;
+}
+
+#photo figure{
+    float: left;
+}
+
+#divList{
+    float:left; 
+    width: 450px;
+}
+
+#photo{
+    float:left; 
+    width: 800px;
+}
