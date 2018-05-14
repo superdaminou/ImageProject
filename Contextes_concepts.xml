@@ -76,11 +76,11 @@
 
 
 <Contexte Num="69" Name="Industrial_Setting" Nbrconcept="1" >
-<Concept ConceptId="69" ConceptName="Industrial_Setting" Weight="1"/>
+<concept ConceptId="69" ConceptName="Industrial_Setting" Weight="1"/>
 </Contexte>
 
 <Contexte Num="74" Name="Landscape" Nbrconcept="1" >
-<Concept ConceptId="74" ConceptName="Landscape" Weight="1"/>
+<concept ConceptId="74" ConceptName="Landscape" Weight="1"/>
 </Contexte>
 
 <Contexte Num="78" Name="Military" Nbrconcept="2">
@@ -167,7 +167,7 @@
     <concept ConceptId="48" ConceptName="Entertainment" Weight="0,5271"/>
     <concept ConceptId="55" ConceptName="Golf" Weight="1"/>
     <concept ConceptId="68" ConceptName="Indoor_Sports_Venue" Weight="0,6192"/>
-    <Concept ConceptId="80" ConceptName="Motorcycle" Weight="0,8526"/>
+    <concept ConceptId="80" ConceptName="Motorcycle" Weight="0,8526"/>
     <concept ConceptId="100" ConceptName="Running" Weight="0,7834"/>
     <concept ConceptId="110" ConceptName="Soccer_Player" Weight="1"/>
     <concept ConceptId="118" ConceptName="Tennis" Weight="1"/>
@@ -176,7 +176,7 @@
     <concept ConceptId="120" ConceptName="Throwing" Weight="0,4634"/>
     <concept ConceptId="127" ConceptName="Walking" Weight="0,4635"/>
     <concept ConceptId="20" ConceptName="Canoe" Weight="0,4636"/>
-    <Concept ConceptId="112" ConceptName="Stadium" Weight="0,4637"/>
+    <concept ConceptId="112" ConceptName="Stadium" Weight="0,4637"/>
 </Contexte>
 
 

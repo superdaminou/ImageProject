@@ -8183,7 +8183,7 @@
     <video Num="7155" Name="TRECVID2010_7155" Weight="0.4782" nombre_de_shots="138" shotrepres="shot7155_99" />
     <video Num="8827" Name="TRECVID2010_8827" Weight="0.0029" nombre_de_shots="1423" shotrepres="shot8827_1117" />
   </concept>
-  <concept num="124" Name="US_Flags">
+  <concept num="124" Name="Us_Flags">
     <video Num="10155" Name="TRECVID2010_10155" Weight="0.0087" nombre_de_shots="38" shotrepres="shot10155_31" />
     <video Num="10191" Name="TRECVID2010_10191" Weight="0.0039" nombre_de_shots="28" shotrepres="shot10191_22" />
     <video Num="10222" Name="TRECVID2010_10222" Weight="0.0303" nombre_de_shots="11" shotrepres="shot10222_6" />
