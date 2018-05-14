@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <contextes>
+
+
+<Contexte Num="2" Name="Adult" Nbrconcept="6">
+    <concept ConceptId="5" ConceptName="Anchorperson" Weight="0,6758"/>
+    <concept ConceptId="11" ConceptName="Beards" Weight="0,4138"/>
+    <concept ConceptId="34" ConceptName="Corporate_Leader" Weight="1"/>
+    <concept ConceptId="83" ConceptName="News_Studio" Weight="0,7786"/>
+    <concept ConceptId="86" ConceptName="Old_People" Weight="0,9816"/>
+    <concept ConceptId="97" ConceptName="Reporters" Weight="0,8977"/>
+</Contexte>
+
+<Contexte Num="3" Name="Airplane" Nbrconcept="2">
+    <concept ConceptId="4" ConceptName="Airplane_Flying"  Weight="1"/>
+    <concept ConceptId="62" ConceptName="Helicopter_Hovering"  Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="6" Name="Animal" Nbrconcept="5">
+    <concept ConceptId="14" ConceptName="Birds" Weight="1"/>
+    <concept ConceptId="23" ConceptName="Cats" Weight="1"/>
+    <concept ConceptId="36" ConceptName="Cows" Weight="1"/>
+    <concept ConceptId="43" ConceptName="Dogs" Weight="1"/>
+    <concept ConceptId="64" ConceptName="Horse" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="26" Name="charts" Nbrconcept="1">
+  <concept ConceptId="76" ConceptName="Maps" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="28" Name="Cityscape" Nbrconcept="3" >
+    <concept ConceptId="18" ConceptName="Building" Weight="1"/>
+    <concept ConceptId="113" ConceptName="Streets" Weight="1"/>
+    <concept ConceptId="114" ConceptName="Suburban" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="48" Name="Entertainment" Nbrconcept="8">
+  <concept ConceptId="105" ConceptName="Singing" Weight="0,5137"/>
+  <concept  ConceptId="24" ConceptName="Celebrity_Entertainment" Weight="1"/>
+  <concept ConceptId="69" ConceptName="Instrumental_Musician" Weight="0,5137"/>
+  <concept ConceptId="38" ConceptName="Dancing" Weight="0,5137"/>
+  <concept ConceptId="101" ConceptName="Scene_Text" Weight="1"/>
+  <concept ConceptId="115" ConceptName="Swimming" Weight="1"/>
+  <concept ConceptId="119" ConceptName="Tent" Weight="0,5137"/>
+  <concept ConceptId="20" ConceptName="Canoe" Weight="0,5137"/>
+</Contexte>
+
+
+<Contexte Num="49" Name="Explosion_Fire" Nbrconcept="1" >
+    <concept ConceptId="49" ConceptName="Explosion_Fire" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="50" Name="Face" Nbrconcept="2">
+    <concept ConceptId="51" ConceptName="Female_Person" Weight="0,4376"/>
+    <concept ConceptId="52" ConceptName="Female-Human-Face-Closeup" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="67" Name="Indoor" Nbrconcept="11">
+    <concept ConceptId="9" ConceptName="Basketball" Weight="0,4706"/>
+    <concept ConceptId="29" ConceptName="Classroom" Weight="1"/>
+    <concept ConceptId="32" ConceptName="Conference_Room" Weight="1"/>
+    <concept ConceptId="35" ConceptName="Court" Weight="1"/>
+    <concept ConceptId="65" ConceptName="Hospital" Weight="1"/>
+    <concept ConceptId="68" ConceptName="Indoor_Sports_Venue" Weight="1"/>
+    <concept ConceptId="72" ConceptName="Kitchen" Weight="1"/>
+    <concept ConceptId="73" ConceptName="Laboratory" Weight="1"/>
+    <concept ConceptId="83" ConceptName="News_Studio" Weight="1"/>
+    <concept ConceptId="85" ConceptName="Office" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="69" Name="Industrial_Setting" Nbrconcept="1" >
+<Concept ConceptId="69" ConceptName="Industrial_Setting" Weight="1"/>
+</Contexte>
+
+<Contexte Num="74" Name="Landscape" Nbrconcept="1" >
+<Concept ConceptId="74" ConceptName="Landscape" Weight="1"/>
+</Contexte>
+
+<Contexte Num="78" Name="Military" Nbrconcept="2">
+  <concept ConceptId="79" ConceptName="Military_base" Weight="1"/>
+  <concept ConceptId="62" ConceptName="Helicopter_Hovering" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="87" Name="Outdoor" Nbrconcept="19">
+    <concept ConceptId="10" ConceptName="Beach" Weight="1"/>
+    <concept ConceptId="15" ConceptName="Boat_Ship" Weight="0,5325"/>
+    <concept ConceptId="17" ConceptName="Bridges" Weight="1"/>
+    <concept ConceptId="18" ConceptName="Building" Weight="1"/>
+    <concept ConceptId="40" ConceptName="Daytime_Outdoor" Weight="1"/>
+    <concept ConceptId="42" ConceptName="Desert" Weight="1"/>
+    <concept ConceptId="61" ConceptName="Harbors" Weight="1"/>
+    <concept ConceptId="63" ConceptName="Highway" Weight="1"/>
+    <concept ConceptId="79" ConceptName="Military_Base" Weight="1"/>
+    <concept ConceptId="81" ConceptName="Mountain" Weight="1"/>
+    <concept ConceptId="82" ConceptName="Natural_Disaster" Weight="1"/>
+    <concept ConceptId="84" ConceptName="Nighttime" Weight="1"/>
+    <concept ConceptId="98" ConceptName="Road" Weight="1"/>
+    <concept ConceptId="99" ConceptName="Roadway_Junction" Weight="1"/>
+    <concept ConceptId="104" ConceptName="Shopping_Mall" Weight="1"/>
+    <concept ConceptId="108" ConceptName="Sky" Weight="1"/>
+    <concept ConceptId="109" ConceptName="Snow" Weight="1"/>
+    <concept ConceptId="125" ConceptName="Vegetation" Weight="0,4508"/>
+    <concept ConceptId="129" ConceptName="Waterscape_Waterfront" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="88" Name="Overlaid_Text" Nbrconcept="1">
+ <concept ConceptId="88" ConceptName="Overlaid_Text" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="90" Name="Person" Nbrconcept="28">
+    <concept ConceptId="1" ConceptName="Actor" Weight="1" />
+    <concept ConceptId="7" ConceptName="Asian_People" Weight="1" />
+    <concept ConceptId="16" ConceptName="Boy" Weight="1" />
+    <concept ConceptId="27" ConceptName="Cheering" Weight="1" />
+    <concept ConceptId="34" ConceptName="Corporate_Leader" Weight="1" />
+    <concept ConceptId="37" ConceptName="Crowd" Weight="1" />
+    <concept ConceptId="39" ConceptName="Dark-skinned_People" Weight="1" />
+    <concept ConceptId="45" ConceptName="Driver" Weight="1" />
+    <concept ConceptId="46" ConceptName="Eaters" Weight="1" />
+    <concept ConceptId="50" ConceptName="Face" Weight="0,9922" />
+    <concept ConceptID="51" ConceptName="Female_Person" Weight="0,9771" />
+    <concept ConceptId="52" ConceptName="Female-Human-Face-Closeup" Weight="0,979" />
+    <concept ConceptId="54" ConceptName="Girl" Weight="0,888" />
+    <concept ConceptId="59" ConceptName="Hand" Weight="1" />
+    <concept ConceptId="60" ConceptName="Handshaking" Weight="1"/>
+    <concept ConceptId="70" ConceptName="Infants" Weight="1"/>
+    <concept ConceptId="75" ConceptName="Male_Person" Weight="1"/>
+    <concept ConceptId="77" ConceptName="Meeting" Weight="1"/>
+    <concept ConceptId="86" ConceptName="Old_People" Weight="1"/>
+    <concept ConceptId="89" ConceptName="People_Marching" Weight="1"/>
+    <concept ConceptId="92" ConceptName="Police_Private_Security_Personnel" Weight="1"/>
+    <concept ConceptId="95" ConceptName="Press_Conference" Weight="1"/>
+    <concept ConceptId="96" ConceptName="Prisoner" Weight="1"/>
+    <concept ConceptId="97" ConceptName="Reporters" Weight="1"/>
+    <concept ConceptId="106" ConceptName="Single_Person" Weight="1"/>
+    <concept ConceptId="107" ConceptName="Sitting_Down" Weight="1"/>
+    <concept ConceptId="116" ConceptName="Teenagers" Weight="1"/>
+    <concept ConceptId="127" ConceptName="Walking" Weight="1"/>
+    
+</Contexte>
+
+
+<Contexte Num="102" Name="Science_Technology" Nbrconcept="4">
+    <concept ConceptId="103" ConceptName="Scientists" Weight="1"/>
+    <concept ConceptId="117" ConceptName="Telephones" Weight="1"/>
+    <concept ConceptId="31" ConceptName="Computers" Weight="1"/>
+    <concept ConceptId="30" ConceptName="Computer_Or_Television_Screens" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="111" Name="Sports" Nbrconcept="18">
+    <concept ConceptId="8" ConceptName="Athlete" Weight="0,7621"/>
+    <concept ConceptId="9" ConceptName="Basketball" Weight="1"/>
+    <concept ConceptId="12" ConceptName="Bicycles" Weight="0,8876"/>
+    <concept ConceptId="13" ConceptName="Bicycling" Weight="1"/>
+    <concept ConceptId="22" ConceptName="Car_Racing" Weight="1"/>
+    <concept ConceptId="48" ConceptName="Entertainment" Weight="0,5271"/>
+    <concept ConceptId="55" ConceptName="Golf" Weight="1"/>
+    <concept ConceptId="68" ConceptName="Indoor_Sports_Venue" Weight="0,6192"/>
+    <Concept ConceptId="80" ConceptName="Motorcycle" Weight="0,8526"/>
+    <concept ConceptId="100" ConceptName="Running" Weight="0,7834"/>
+    <concept ConceptId="110" ConceptName="Soccer_Player" Weight="1"/>
+    <concept ConceptId="118" ConceptName="Tennis" Weight="1"/>
+    <concept ConceptId="128" ConceptName="Walking_Running" Weight="0,4633"/>
+    <concept ConceptId="115" ConceptName="Swimming" Weight="0,7834"/>
+    <concept ConceptId="120" ConceptName="Throwing" Weight="0,4634"/>
+    <concept ConceptId="127" ConceptName="Walking" Weight="0,4635"/>
+    <concept ConceptId="20" ConceptName="Canoe" Weight="0,4636"/>
+    <Concept ConceptId="112" ConceptName="Stadium" Weight="0,4637"/>
+</Contexte>
+
+
+
+<Contexte Num="123" Name="Two_People" Nbrconcept="2">
+  <concept ConceptId="57" ConceptName="Greeting" Weight="0,6795"/>
+  <concept ConceptId="41" ConceptName="Demonstration_Or_Protest" Weight="0,6795"/>
+</Contexte>
+
+
+<Contexte Num="124" Name="Us_Flags" Nbrconcept="1">
+<concept ConceptId="124" ConceptName="Us_Flags" Weight="1"/>
+</Contexte>
+
+
+<Contexte Num="125" Name="Vegetation" Nbrconcept="4">
+    <concept ConceptId="53" ConceptName="Flowers" Weight="1"/>
+    <concept ConceptId="74" ConceptName="Landscape" Weight="0,4237"/>
+    <concept ConceptId="91" ConceptName="Plant" Weight="1"/>
+    <concept ConceptId="121" ConceptName="Trees" Weight="0,496"/>
+</Contexte>
+
+
+<Contexte  Num="126" Name="Vehicle" Nbrconcept="9">
+    <concept ConceptId="15" ConceptName="Boat_Ship" Weight="0,7195"/>
+    <concept ConceptId="19" ConceptName="Bus" Weight="1"/>
+    <concept ConceptId="21" ConceptName="Car" Weight="0,9432"/>
+    <concept ConceptId="33" ConceptName="Construction_Vehicles" Weight="1"/>
+    <concept ConceptId="47" ConceptName="Emergency_Vehicles" Weight="1"/>
+    <concept ConceptId="58" ConceptName="Ground_Vehicles" Weight="1"/>
+    <concept ConceptId="80" ConceptName="Motorcycle" Weight="1"/>
+    <concept ConceptId="122" ConceptName="Truck"  Weight="1"/>
+    <concept ConceptId="45" ConceptName="Driver" Weight="0,4195"/>
+</Contexte>
+
+
+<Contexte Num="130" Name="Weather" Nbrconcept="1" >
+<concept ConceptId="130" ConceptName="Weather"  Weight="1"/>
+</Contexte>
+<Contexte Num="1" Name="Actor" Nbrconcept="1">
+    <concept ConceptId="1" ConceptName="Actor" Weight="1"/>
+</Contexte>
+
+<Contexte Num="69" Name="Industrial_Setting" Nbrconcept="1">
+    <concept ConceptId="1" ConceptName="Industrial_Setting" Weight="1" />
+</Contexte>
+
+
+<Contexte Num="74" Name="Landscape" Nbrconcept="1">
+    <concept ConceptId="1" ConceptName="Landscape" Weight="1"/>
+</Contexte>
+
+
+</contextes>
