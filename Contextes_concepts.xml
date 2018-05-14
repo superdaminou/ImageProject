@@ -224,10 +224,4 @@
     <concept ConceptId="1" ConceptName="Industrial_Setting" Weight="1" />
 </Contexte>
 
-
-<Contexte Num="74" Name="Landscape" Nbrconcept="1">
-    <concept ConceptId="1" ConceptName="Landscape" Weight="1"/>
-</Contexte>
-
-
 </contextes>
