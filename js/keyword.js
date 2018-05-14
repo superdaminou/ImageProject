@@ -1,9 +1,10 @@
 
-
 var ulContextes = document.getElementById("contexteList");
 var divImages = document.getElementById("photo");
-var xmlDoc = null;
-var xmlDocVideo = null;
+parser=new DOMParser();
+var xmlDoc=parser.parseFromString(conceptsString,"text/xml");
+var xmlDocVideo=parser.parseFromString(videoString,"text/xml");
+
 
 function selectContext(e) {
 
@@ -23,24 +24,7 @@ function selectContext(e) {
 
 
 function pageLoaded() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            xmlDocVideo = this.responseXML;
-        }
-    };
-    xhttp.open("GET", "Concepts_Videos.xml", true);
-    xhttp.send();
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            displayContextes(this);
-
-        }
-    };
-    xhttp.open("GET", "Contextes_concepts.xml", true);
-    xhttp.send();
+    displayContextes();
     ulContextes.addEventListener("click", function (e) { selectContext(e) });
 }
 
@@ -94,8 +78,7 @@ function displayImagesAndLoad(images){
 
 
 
-function displayContextes(xml) {
-    xmlDoc = xml.responseXML;
+function displayContextes() {
     var Contextes = xmlDoc.childNodes[0].getElementsByTagName("Contexte");
 
     for (var i = 0; i < Contextes.length; i++) {
