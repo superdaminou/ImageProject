@@ -65,14 +65,15 @@ function displayImages(pConceptName) {
 function displayImagesAndLoad(images){
     divImages.innerHTML = '';
     for (var j = 0; j < images.length; j++) {
-        var figure = document.createElement("figure");
+       //var figure = document.createElement("figure");
         var img = document.createElement("img");
-        var figcaption = document.createElement("figcaption");
-        figcaption.appendChild(document.createTextNode(images[j].weight));
+       // var figcaption = document.createElement("figcaption");
+       // figcaption.appendChild(document.createTextNode(images[j].weight));
         img.src = images[j].name;
-        figure.appendChild(img);
-        figure.appendChild(figcaption);
-        divImages.appendChild(figure);
+        img.className = "borderwhite";
+        //figure.appendChild(img);
+        //figure.appendChild(figcaption);
+        divImages.appendChild(img);
     }
 }
 

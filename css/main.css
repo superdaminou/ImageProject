@@ -127,3 +127,13 @@ h3 {
 	text-transform: uppercase;
 }
 
+img.borderwhite{
+	border: white solid 5px;
+	width: 120px;
+	margin: 5px;
+}
+
+div#photo{
+	transform: rotate3d(5,27,4,25deg);
+	margin-left: 110px;
+}
