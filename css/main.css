@@ -137,3 +137,8 @@ div#photo{
 	transform: rotate3d(5,27,4,13deg);
 	margin-left: 110px;
 }
+
+#mycanvas.a{
+	font-weight: bold;
+	color: blue;
+}

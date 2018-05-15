@@ -1,5 +1,7 @@
 
 var ulContextes = document.getElementById("contexteList");
+var subulContextes = document.getElementById("subcontexteList");
+
 var divImages = document.getElementById("photo");
 parser=new DOMParser();
 var xmlDoc=parser.parseFromString(conceptsString,"text/xml");
@@ -13,12 +15,26 @@ function selectContext(e) {
 
         for (var i = 0; i < divsToHide.length; i++) {
             divsToHide[i].style.display = "none";
-        }
+        }   
+
 
         var cDiv = e.target.children;
         for (var i = 0; i < cDiv.length; i++) {
             cDiv[i].style.display = 'block';
         }
+     
+        console.log(e.target.id);
+        try {
+            TagCanvas.Start('myCanvas',"id" + e.target.id,
+        
+        {
+            textFont: 'Impact,"Arial Black",sans-serif',
+ textColour: '#00f',
+ textHeight: 25
+        });
+       } catch (e) {
+           console.log(e);
+       }
     }
 }
 
@@ -96,7 +112,9 @@ function displayContextes() {
             var conceptName = concepts[j].getAttribute('ConceptName');
 
             var liSubList = document.createElement("li");
+         
             var aliSubList = document.createElement("a");
+            aliSubList.href='javascript:void:(0);';
 
             var finalWeight = ConceptWeight.replace(",", ".") * 20 + "px";
 
@@ -111,6 +129,7 @@ function displayContextes() {
         }
 
         var li = document.createElement("li");
+        li.id = Contexte;
         li.appendChild(document.createTextNode(Contexte));
         li.append(ulSubList);
 
@@ -118,11 +137,7 @@ function displayContextes() {
 
         ulContextes.appendChild(li);
 
-       /* try {
-            TagCanvas.Start(Contexte);
-        } catch (e) {
-            console.log(e);
-        }*/
+       
     }
 }
 
