@@ -28,7 +28,7 @@ function selectContext(e) {
         }
 
         /* Affichage des sous thémes sous forme d'un nuage de point */
-        try {
+        /*try {
             TagCanvas.Start('myCanvas', "id" + e.target.id,
 
                 {
@@ -38,7 +38,7 @@ function selectContext(e) {
                 });
         } catch (e) {
             console.log(e);
-        }
+        }*/
     }
 }
 
