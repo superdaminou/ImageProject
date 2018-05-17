@@ -41,6 +41,12 @@ footer {
 	color: #464444;
 }
 
+.colored {
+	background: url("../images/background.jpg");
+	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+}
+
 
 /*** Colonnage ***/
 
@@ -61,7 +67,6 @@ footer {
 	text-align: center;
 }
 
-
 .col-1-2 {
 	width: 50%;
 	height: 100%;
@@ -74,7 +79,6 @@ footer {
 	display: flex;
 	float: left;
 } 
-
 
 .weighted {
     margin-left: 20px;
@@ -101,14 +105,13 @@ a {
 }
 
 
-
 /*** Texte ***/
 
 h1 {
 	font-size: 300px;
 	padding-top: 100px;
 	margin: 0;
-	text-shadow: 1px 1px 1px black;
+	display: inline;
 }
 
 h2 {
@@ -118,13 +121,19 @@ h2 {
 	text-transform: uppercase;
 }
 
-
 h3 {
 	float: right;
 	letter-spacing: 10px;
 	margin-right: 40px;
 	bottom: 0;
 	text-transform: uppercase;
+}
+
+.cadre {
+	background: #E1E1E1;
+	width: 700px;
+	margin: auto;
+	margin-top: 200px;
 }
 
 img.borderwhite{
@@ -142,3 +151,4 @@ div#photo{
 	font-weight: bold;
 	color: blue;
 }
+
