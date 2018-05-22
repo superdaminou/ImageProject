@@ -23,24 +23,43 @@ function selectContext(e) {
 
         /* Affichage des sous thémes de l'élément choisi */
         var cDiv = e.target.children;
+
         for (var i = 0; i < cDiv.length; i++) {
             cDiv[i].style.display = 'block';
         }
 
         /* Affichage des sous thémes sous forme d'un nuage de point */
-        /*try {
+        try {
             TagCanvas.Start('myCanvas', "id" + e.target.id,
 
                 {
-                    textFont: 'Impact,"Arial Black",sans-serif',
-                    textColour: '#00f',
-                    textHeight: 25
+                    textFont: 'Montserrat, sans-serif',
+                    textColour: getRandomColor(),
+                    textHeight: 20
                 });
         } catch (e) {
             console.log(e);
-        }*/
+        }
     }
 }
+
+/* Définir taille texte
+function getSize(image) {
+    var weight = image.getAttribute('Weight'),
+    var size = 20*weight,
+    return size;
+}
+*/
+
+/* créer couleur aléatoire */
+function getRandomColor() {
+    var tabColors = ['#2980b9', '#9b59b6', '#e74c3c', '#1abc9c'];
+    var i = Math.floor((Math.random() * 3) + 1);
+    var color = tabColors[i];
+    
+    return color;
+}
+
 
 /* fonction exécutée lorsque la page est chargée. */
 function pageLoaded() {

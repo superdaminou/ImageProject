@@ -1,7 +1,7 @@
 /*** Base ***/
 
 html {
-	width: 100%;
+	width: 99%;
 	height: 200%;
 	background: transparent url("../images/background.jpg") no-repeat fixed 0% 0%;
 	background-size: cover;
@@ -110,6 +110,14 @@ a {
 	margin: auto;
 	list-style: none;
 	overflow: auto;
+}
+
+#contexteList li {
+	cursor: pointer;
+}
+
+#contexteList li:hover {
+	background-color: rgba(255, 234, 167, 0.6);
 }
 
 
