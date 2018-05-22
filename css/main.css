@@ -69,8 +69,7 @@ footer {
 
 .col-1-2 {
 	width: 50%;
-	height: 190%;
-	display: flex;
+	height: 100%;
 	float: left;
 }
 
@@ -94,18 +93,23 @@ a {
     float: left;
 }
 
-#divList{
+.divList{
     float:left; 
-    width: 50%;
+    width: 100%;
 }
 
-#photo{
-    float:left; 
-    width: 800px;
+.view {
+	background-color: #E1E1E1;
+	padding-bottom: 500px;
 }
 
-.viewer {
-	
+
+#contexteList {
+	width: 50%;
+	height: 200px;
+	margin: auto;
+	list-style: none;
+	overflow: auto;
 }
 
 
@@ -123,18 +127,29 @@ h3 {
 	letter-spacing: 10px;
 	margin-right: 40px;
 	bottom: 0;
+	font-size: 15px;
 	text-transform: uppercase;
 }
 
-img.borderwhite{
-	border: white solid 5px;
-	width: 120px;
-	margin: 5px;
+h4 {
+	margin-left: 50px;
 }
 
-div#photo{
-	transform: rotate3d(5,27,4,13deg);
-	margin-left: 110px;
+
+img.borderwhite{
+	border: #e1e1e1 solid 5px;
+	width: 100px;
+	margin: 5px;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+#photo{
+	width: 99%;
+	/* transform: rotate3d(5,27,4,13deg); */
+	margin: auto;
+    float: left; 
+    height: 90%;
+    overflow: auto;
 }
 
 #mycanvas.a{
