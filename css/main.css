@@ -12,12 +12,6 @@ body {
 	width: 100%;
 }
 
-footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-}
-
 
 /*** Color ***/
 
@@ -105,11 +99,13 @@ a {
 
 
 #contexteList {
-	width: 50%;
-	height: 200px;
+	width: 90%;
 	margin: auto;
-	list-style: none;
 	overflow: auto;
+	-moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    list-style: none;
 }
 
 #contexteList li {
@@ -117,7 +113,7 @@ a {
 }
 
 #contexteList li:hover {
-	background-color: rgba(255, 234, 167, 0.6);
+	color: #f39c12;
 }
 
 
