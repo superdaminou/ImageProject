@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <contextes>
+<Contexte Num="1" Name="Actor" Nbrconcept="1">
+    <concept ConceptId="1" ConceptName="Actor" Weight="1"/>
+</Contexte>
 
 
 <Contexte Num="2" Name="Adult" Nbrconcept="6">
@@ -76,7 +79,7 @@
 
 
 <Contexte Num="69" Name="Industrial_Setting" Nbrconcept="1" >
-<concept ConceptId="69" ConceptName="Industrial_Setting" Weight="1"/>
+    <concept ConceptId="69" ConceptName="Industrial_Setting" Weight="1"/>
 </Contexte>
 
 <Contexte Num="74" Name="Landscape" Nbrconcept="1" >
@@ -214,14 +217,6 @@
 
 
 <Contexte Num="130" Name="Weather" Nbrconcept="1" >
-<concept ConceptId="130" ConceptName="Weather"  Weight="1"/>
+    <concept ConceptId="130" ConceptName="Weather"  Weight="1"/>
 </Contexte>
-<Contexte Num="1" Name="Actor" Nbrconcept="1">
-    <concept ConceptId="1" ConceptName="Actor" Weight="1"/>
-</Contexte>
-
-<Contexte Num="69" Name="Industrial_Setting" Nbrconcept="1">
-    <concept ConceptId="1" ConceptName="Industrial_Setting" Weight="1" />
-</Contexte>
-
 </contextes>

@@ -12,6 +12,7 @@ parser = new DOMParser();
 var xmlDoc = parser.parseFromString(conceptsString, "text/xml");
 var xmlDocVideo = parser.parseFromString(videoString, "text/xml");
 
+
 /* Fonction exécutée lors du click sur un théme */
 function selectContext(e) {
     if (e.target.nodeName == "LI") {
@@ -22,25 +23,32 @@ function selectContext(e) {
         }
 
         /* Affichage des sous thémes de l'élément choisi */
-        var cDiv = e.target.children;
-
-        for (var i = 0; i < cDiv.length; i++) {
-            cDiv[i].style.display = 'block';
-        }
-
-        /* Affichage des sous thémes sous forme d'un nuage de point */
-        try {
-            TagCanvas.Start('myCanvas', "id" + e.target.id,
-
-                {
-                    textFont: 'Montserrat, sans-serif',
-                    textColour: getRandomColor(),
-                    textHeight: 20
-                });
-        } catch (e) {
-            console.log(e);
-        }
+        displaySubTheme(e.target.id);
+      
     }
+}
+
+function displaySubTheme(subtheme){
+    cDivMain = document.getElementById(subtheme);
+    cDiv = cDivMain.children;
+    document.getElementById("h1Context").innerText=subtheme;
+    for (var i = 0; i < cDiv.length; i++) {
+        cDiv[i].style.display = 'block';
+    }
+    /* Affichage des sous thémes sous forme d'un nuage de point */
+    try {
+        TagCanvas.Start('myCanvas', "id" + subtheme,
+
+            {
+                textFont: 'Montserrat, sans-serif',
+                textColour: getRandomColor(),
+                textHeight: 20
+            });
+    } catch (e) {
+        console.log(e);
+    }
+    displayImages(cDiv[0].children[0].innerText);
+    return cDiv[0];
 }
 
 /* Définir taille texte
@@ -59,7 +67,6 @@ function getRandomColor() {
     
     return color;
 }
-
 
 /* fonction exécutée lorsque la page est chargée. */
 function pageLoaded() {
@@ -81,6 +88,7 @@ function compareWeightDesc(a, b) {
 
 /** Sélection puis Affichage des images suivant le contexte passé en paramétre */
 function displayImages(pConceptName) {
+    document.getElementById("h2Theme").innerText=pConceptName;
     var images = [];
     var concepts = xmlDocVideo.childNodes[0].getElementsByTagName("concept");
     for (var j = 0; j < concepts.length; j++) {
@@ -165,6 +173,12 @@ function displayContextes() {
 
 
     }
+
+    displayFirst();
+}
+
+function displayFirst(){
+    displayImages(displaySubTheme("Actor").children[0].innerText);
 }
 
 /** document chargé, on appel pageLoaded */

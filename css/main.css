@@ -165,3 +165,10 @@ img.borderwhite{
 	color: blue;
 }
 
+.titleSelected{
+	width:100%; 
+
+}
+.titleSelected h1{
+	float: left;
+}
