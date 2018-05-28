@@ -124,6 +124,7 @@ function displayImagesAndLoad(images) {
         //figure.appendChild(img);
         //figure.appendChild(figcaption);
         divImages.appendChild(img);
+
     }
 }
 
