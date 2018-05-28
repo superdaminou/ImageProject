@@ -71,7 +71,7 @@ body {
 	width: 33.3%;
 	display: flex;
 	float: left;
-} 
+}
 
 .weighted {
     margin-left: 20px;
@@ -88,7 +88,7 @@ a {
 }
 
 .divList{
-    float:left; 
+    float:left;
     width: 100%;
 }
 
@@ -146,14 +146,6 @@ img.borderwhite{
 	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
 }
 
-#photo{
-	width: 99%;
-	/* transform: rotate3d(5,27,4,13deg); */
-	margin: auto;
-    float: left; 
-    height: 90%;
-    overflow: auto;
-}
 
 #mycanvas.a{
 	font-weight: bold;
@@ -161,9 +153,44 @@ img.borderwhite{
 }
 
 .titleSelected{
-	width:100%; 
+	width:100%;
 
 }
 .titleSelected h1{
 	float: left;
+}
+
+.wrapper {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(20deg);
+}
+.slides {
+  perspective: 313px;
+  padding: 50px 0px;
+  width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  overflow: auto;
+  transform: translate(-50%, -0%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.slide {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  transform: rotateX(-40deg);
+  transform-origin: 0 0;
+  box-shadow: inset 0 0 0 5px rgba(200,200,200,.25);
+}
+
+.topwrapper {
+  perspective: 400px;
 }
