@@ -162,6 +162,7 @@ img.borderwhite{
 }
 
 .wrapper {
+	margin-top: 100px;
   transform-style: preserve-3d;
   position: absolute;
   top: 0;
