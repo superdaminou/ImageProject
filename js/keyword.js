@@ -24,7 +24,7 @@ function selectContext(e) {
 
         /* Affichage des sous thémes de l'élément choisi */
         displaySubTheme(e.target.id);
-      
+
     }
 }
 
@@ -32,6 +32,7 @@ function displaySubTheme(subtheme){
     cDivMain = document.getElementById(subtheme);
     cDiv = cDivMain.children;
     document.getElementById("h1Context").innerText=subtheme;
+
     for (var i = 0; i < cDiv.length; i++) {
         cDiv[i].style.display = 'block';
     }
@@ -66,7 +67,7 @@ function getRandomColor() {
     var tabColors = ['#2980b9', '#9b59b6', '#e74c3c', '#1abc9c'];
     var i = Math.floor((Math.random() * 3) + 1);
     var color = tabColors[i];
-    
+
     return color;
 }
 
@@ -119,13 +120,16 @@ function displayImagesAndLoad(images) {
     for (var j = 0; j < images.length; j++) {
         //var figure = document.createElement("figure");
         var img = document.createElement("img");
+        var div = document.createElement("div");
         // var figcaption = document.createElement("figcaption");
         // figcaption.appendChild(document.createTextNode(images[j].weight));
         img.src = images[j].name;
+        div.className = "slide"
         img.className = "borderwhite";
         //figure.appendChild(img);
         //figure.appendChild(figcaption);
-        divImages.appendChild(img);
+        divImages.appendChild(div);
+        div.appendChild(img)
 
     }
 }
