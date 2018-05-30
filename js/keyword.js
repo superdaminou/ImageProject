@@ -42,7 +42,9 @@ function displaySubTheme(subtheme){
             {
                 textFont: 'Montserrat, sans-serif',
                 textColour: getRandomColor(),
-                textHeight: 20
+                weight: true,
+                weightFrom: 'dataweight',
+                weightMode: "size"
             });
     } catch (e) {
         console.log(e);
@@ -151,9 +153,10 @@ function displayContextes() {
             var aliSubList = document.createElement("a");
             aliSubList.href = 'javascript:void:(0);';
 
-            var finalWeight = ConceptWeight.replace(",", ".") * 20 + "px";
+            var finalWeight = ConceptWeight.replace(",", ".") * 100 + "px";
 
             aliSubList.style.fontSize = finalWeight;
+            aliSubList.setAttribute("dataweight", ConceptWeight.replace(",", ".") * 40);
 
             aliSubList.appendChild(document.createTextNode(conceptName));
             aliSubList.addEventListener("click", function () { displayImages(this.innerText); });
