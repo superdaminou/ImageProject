@@ -128,6 +128,7 @@ function displayImagesAndLoad(images) {
         img.className = "borderwhite";
         //figure.appendChild(img);
         //figure.appendChild(figcaption);
+        div.innerHTML = div.innerHTML + "<label style='float: right;'>weight: "+images[j].weight +"</label>";
         divImages.appendChild(div);
         div.appendChild(img)
 
