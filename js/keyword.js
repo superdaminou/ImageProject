@@ -125,6 +125,7 @@ function displayImagesAndLoad(images) {
         img.className = "borderwhite";
         //figure.appendChild(img);
         //figure.appendChild(figcaption);
+     
         divImages.appendChild(img);
 
     }
