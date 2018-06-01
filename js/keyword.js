@@ -118,11 +118,13 @@ function displayImagesAndLoad(images) {
     divImages.innerHTML = '';
     for (var j = 0; j < images.length; j++) {
         //var figure = document.createElement("figure");
+        var div = document.createElement("div");
         var img = document.createElement("img");
         // var figcaption = document.createElement("figcaption");
         // figcaption.appendChild(document.createTextNode(images[j].weight));
         img.src = images[j].name;
         img.className = "borderwhite";
+        div.className = "slide";
         //figure.appendChild(img);
         //figure.appendChild(figcaption);
         div.innerHTML = div.innerHTML + "<label style='float: right;'>weight: "+images[j].weight +"</label>";
